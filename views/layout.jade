@@ -1,0 +1,22 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Aplicacion de Chat
+		link(rel="stylesheet", href="/public/plugins/bootstrap/css/bootstrap.css")
+		link(rel="stylesheet", href="/public/assets/css/app.css")
+		script(src="/socket.io/socket.io.js")
+		
+	body
+		header.top-hd
+			nav
+				ul
+					li
+						a(href="/") Login
+					li
+						a(href="/register") Registro
+		block contenido
+
+		script(src="/public/plugins/jquery/jquery.min.js", crossorigin="anonymous")
+		script(src="/public/plugins/bootstrap/js/bootstrap.js", crossorigin="anonymous")
+		script(src="/public/assets/js/main.js")

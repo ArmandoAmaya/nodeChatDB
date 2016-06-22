@@ -1,0 +1,11 @@
+extends ./layout.jade
+block contenido
+	h1(class="text-center top-space") Bienvenido: 
+		span(id="user") #{user.name}
+	div(class="col-md-10 col-lg-6 no-float center-block top-space")
+		div(id="chat").
+	
+		form(class="top-space", id="chatForm", onsubmit="return addMessage(this)")
+			div(class="form-group")
+				input(type="text", autocomplete="off", id="texto", class="form-control")
+			input(type="submit", value="Enviar", class="btn btn-info")
