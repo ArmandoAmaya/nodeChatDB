@@ -15,7 +15,7 @@ var messages = [{
     autor: "Sistema"
 }];
 
-var connection_string = '127.0.0.1:27017/programandocodigo';
+var connection_string = process.env.MONGO_URL || process.env.MONGO_URI || '127.0.0.1:27017/nodechatdb';
 
 if (process.env.OPENSHIFT_MONGODB_DB_PASSWORD) {
     connection_string = process.env.OPENSHIFT_MONGODB_DB_USERNAME + ":" +
